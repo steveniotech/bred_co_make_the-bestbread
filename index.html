@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bred: Rise to the Top</title>
+    <!-- This links your separate CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Heads Up Display -->
+    <div id="ui">
+        Money: $<span id="money-display">0</span><br>
+        Workers: <span id="worker-display">0</span>
+    </div>
+    <div id="prompt">Press E to start slicing Bred</div>
+
+    <!-- The Walking World -->
+    <div id="world">
+        <div id="station">
+            <div class="station-label">Cutting Area</div>
+        </div>
+        <div id="player"></div>
+    </div>
+
+    <!-- The Cutting Mini-Game -->
+    <div id="cutting-mode">
+        <h2>Drag across the Bred to slice!</h2>
+        <p>Press ESC to leave</p>
+        <div id="bread-container">
+            <div id="bread-left" class="bread-half"></div>
+            <div id="bread-right" class="bread-half" style="clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);"></div>
+            <div id="bread-left" class="bread-half" style="clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);"></div>
+        </div>
+    </div>
+
+    <!-- This links your separate JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
